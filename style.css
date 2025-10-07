@@ -1,0 +1,202 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffaf4; /* pastel peach */
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Sticky Header with Shadow */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #f7c8e0; /* pastel rose */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sticky Footer with Shadow */
+footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #f7c8e0;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation links with distinct pastel colors */
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+nav a[href*="formulario"] {
+  background-color: #c5e1a5; /* pastel green */
+  color: #2e7d32;
+}
+
+nav a[href*="tabla"] {
+  background-color: #b3e5fc; /* pastel blue */
+  color: #0277bd;
+}
+
+nav a[href*="linea"] {
+  background-color: #ffe082; /* pastel yellow */
+  color: #f57f17;
+}
+
+nav a[href*="audio"] {
+  background-color: #d1c4e9; /* pastel purple */
+  color: #512da8;
+}
+
+nav a[href*="video"] {
+  background-color: #ffccbc; /* pastel coral */
+  color: #d84315;
+}
+
+nav a:hover {
+  opacity: 0.85;
+}
+
+/* Main container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 40px;
+}
+
+/* Responsive images */
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table box styling */
+#tabla {
+  background-color: #e0f7fa; /* pastel aqua */
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #b2ebf2;
+}
+
+#tabla h2 {
+  margin-bottom: 15px;
+  color: #00796b;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+thead {
+  background-color: #b2ebf2;
+}
+
+/* Form box styling */
+#formulario {
+  background-color: #f1f8e9; /* pastel green */
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #dcedc8;
+}
+
+#formulario h2 {
+  margin-bottom: 15px;
+  color: #558b2f;
+}
+
+form .form-label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+input:focus {
+  border-color: #80bdff;
+  outline: none;
+}
+
+.invalid-feedback {
+  color: red;
+  font-size: 0.9em;
+}
+
+/* Submit button */
+button.btn-success {
+  background-color: #a5d6a7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.btn-success:hover {
+  background-color: #81c784;
+}
+
+/* Audio and video spacing */
+audio, video {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Utility spacing */
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.my-5 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
